@@ -6,6 +6,8 @@ dotenv.config();
 
 const app = express();
 
+const UserRouter = require("./MiddleWare/UserRouter");
+
 const MONGOOSE_URL = process.env.MONGO_ID;
 
 const PORT = process.env.PORT ||8080;
